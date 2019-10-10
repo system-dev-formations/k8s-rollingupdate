@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-one
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  selector:
+    matchLabels:
+      system: ReplicaOne
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        system: ReplicaOne
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:1.9.2
+  replicas: 2
+
