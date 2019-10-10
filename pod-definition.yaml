@@ -7,7 +7,9 @@ metadata:
     type: front-end
 spec:
   containers:
-    - name: nginx-container
+    - name: nginxcontainer
       image: nginx
     - name: busybox
       image: busybox
+  nodeSelector:
+    status: vip
