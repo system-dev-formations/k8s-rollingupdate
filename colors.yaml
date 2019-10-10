@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+  back: |
+    b
+    connu
+  cyan: |
+    c
+  favorite: |
+    blue
+  magenta: |
+    m
+  test: black
+  yellow: |
+    y
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2019-10-10T12:55:59Z"
+  name: colors
+  namespace: default
+  resourceVersion: "657160"
+  selfLink: /api/v1/namespaces/default/configmaps/colors
+  uid: 617a26f1-c53a-4fa8-93a8-04fbc5ec9226
